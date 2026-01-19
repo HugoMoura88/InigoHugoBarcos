@@ -44,10 +44,10 @@ public class Main {
 				nombremax=barco.getNombre();
 			}
 		}
-		System.out.println("El barco con mayor autonomia es "+nombremax);
-		System.out.println("El barco con menor autonomia es "+nombremin);
+		System.out.println("\nEl barco con mayor autonomia es "+nombremax);
+		System.out.println("El barco con menor autonomia es "+nombremin+"\n");
 		
-		marina.salirBarco("Cata");
+		marina.salirBarco("Catatote");
 		
 		System.out.println(marina);
 
