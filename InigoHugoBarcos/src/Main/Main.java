@@ -21,6 +21,10 @@ public class Main {
 		Catamaran catamaran1 = new Catamaran("Cata", motor2, 5.7, motor3);
 		Catamaran catamaran2 = new Catamaran("Cata", motor1, 7.5, motor2);
 		
+		marina.entrarBarco(yate1);
+		marina.entrarBarco(yate2);
+		marina.entrarBarco(catamaran1);
+		marina.entrarBarco(catamaran2);
 		
 		
 
