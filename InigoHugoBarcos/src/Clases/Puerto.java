@@ -1,6 +1,7 @@
 package Clases;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Puerto {
 	//Atributos
@@ -19,19 +20,12 @@ public class Puerto {
 		}
 	}
 	public void salirBarco(String nombre) {
-		for (Barco barco : barcos) {
-			String nom = barco.getNombre();
-			if (nom == nombre) {
-				barcos.remove(barco);
-			}
-		}
-	}
-	public void salirBarcos(String nombre) {
-		for (Barco barco : barcos) {
-			String nom = barco.getNombre();
-			if (nom == nombre) {
-				barcos.remove(barco);
-			}
+		Iterator<Barco> iterador = barcos.iterator();
+		while (iterador.hasNext()) {
+		    Barco bar = iterador.next();
+		    if (bar.nombre.equals(nombre)) {
+		        iterador.remove(); 
+		    }
 		}
 	}
 	public double calcularPrecioViaje(Barco b, int horas, double precioCombustible) {
