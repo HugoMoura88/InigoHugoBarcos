@@ -23,8 +23,8 @@ public class Catamaran extends Barco {
 	//ToString
 	@Override
 	public String toString() {
-		return "Catamaran [motorSegundario=" + motorSegundario + ", nombre=" + nombre + ", motor=" + motor
-				+ ", capacidadCombustible=" + capacidadCombustible + "]";
+		return nombre +" = MotorSegundario=" + motorSegundario + ", motor=" + motor
+				+ ", capacidadCombustible=" + capacidadCombustible +", autonomia= "+calcularAutonomia()+ "\n";
 	}
 
 }

@@ -2,9 +2,9 @@ package Clases;
 
 public class Yate extends Barco{
 	//Atributos
-protected int camarotes;
+protected double camarotes;
 //Constructor
-public Yate(String nombre, Motor motor, double capacidadCombustible, int camarotes) {
+public Yate(String nombre, Motor motor, double capacidadCombustible, double camarotes) {
 	super(nombre, motor, capacidadCombustible);
 	this.camarotes = camarotes;
 }
@@ -15,7 +15,7 @@ public double calcularAutonomia() {
 	return super.calcularAutonomia();
 }
 //GetterSetters
-public int getCamarotes() {
+public double getCamarotes() {
 return camarotes;
 }
 public void setCamarotes(int camarotes) {
@@ -25,8 +25,7 @@ this.camarotes = camarotes;
 //ToString
 @Override
 public String toString() {
-return "Yate [camarotes=" + camarotes + ", nombre=" + nombre + ", motor=" + motor + ", capacidadCombustible="
-		+ capacidadCombustible + "]";
+return nombre +" Camarotes"+ camarotes + ", motor=" + motor + ", capacidadCombustible="+ capacidadCombustible +", autonomia= "+calcularAutonomia()+ "\n";
 }
 
 	

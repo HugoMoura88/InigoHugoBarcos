@@ -19,7 +19,12 @@ public class Puerto {
 		}
 	}
 	public void salirBarco(String nombre) {
-		barcos.remove(nombre);
+		for (Barco barco : barcos) {
+			String nom = barco.getNombre();
+			if (nom == nombre) {
+				barcos.remove(barco);
+			}
+		}
 	}
 	public double calcularPrecioViaje(Barco b, int horas, double precioCombustible) {
 		if (b.capacidadCombustible<horas) {
@@ -39,7 +44,8 @@ public class Puerto {
 	//ToString 
 	@Override
 	public String toString() {
-		return "Puerto [barcos=" + barcos + ", getBarcos()=" + getBarcos() + "]";
+		return barcos+"";
 	}
+
 	
 }

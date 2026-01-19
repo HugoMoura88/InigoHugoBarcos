@@ -34,7 +34,7 @@ public class Motor {
 	//ToString
 	@Override
 	public String toString() {
-		return "Motor [modelo=" + modelo + ", potencia=" + potencia + ", consumo=" + consumo + "]";
+		return modelo + ", potencia=" + potencia + ", consumo=" + consumo;
 	}
 	
 	
