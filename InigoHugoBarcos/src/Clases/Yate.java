@@ -1,7 +1,9 @@
 package Clases;
 
-public class Yate {
-	protected String nombre;
-	protected 
+public class Yate extends Barco{
+	
+	
+	protected int camarotes;
+	
 	
 }
