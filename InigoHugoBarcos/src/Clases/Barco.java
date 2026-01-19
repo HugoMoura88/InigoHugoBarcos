@@ -13,6 +13,34 @@ public class Barco {
 		this.capacidadCombustible = capacidadCombustible;
 	}
 	//Metodos
-
+	public double calcularAutonomia() {
+		return capacidadCombustible/motor.consumo;
+	}
+	//GettersSetters
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public Motor getMotor() {
+		return motor;
+	}
+	public void setMotor(Motor motor) {
+		this.motor = motor;
+	}
+	public double getCapacidadCombustible() {
+		return capacidadCombustible;
+	}
+	public void setCapacidadCombustible(double capacidadCombustible) {
+		this.capacidadCombustible = capacidadCombustible;
+	}
+	//ToString
+	@Override
+	public String toString() {
+		return "Barco [nombre=" + nombre + ", motor=" + motor + ", capacidadCombustible=" + capacidadCombustible + "]";
+	}
+	
+	
 	
 }
