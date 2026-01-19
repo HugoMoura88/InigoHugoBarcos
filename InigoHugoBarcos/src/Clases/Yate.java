@@ -23,7 +23,7 @@ public String toString() {
 			+ capacidadCombustible + "]";
 }
   	//Metodos
-public void calcularAutonomia() {
+ public void calcularAutonomia() {
 	
 }
 
