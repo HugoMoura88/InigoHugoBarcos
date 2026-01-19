@@ -23,9 +23,12 @@ public String toString() {
 			+ capacidadCombustible + "]";
 }
   	//Metodos
- public void calcularAutonomia() {
-	
+@Override
+public double calcularAutonomia() {
+	// TODO Auto-generated method stub
+	return super.calcularAutonomia();
 }
+ 
 
 
 	
